@@ -1,4 +1,6 @@
+from typing import List
 # Solution 1
+
 nums = [1,2,2,3,6,6,7]
 nums1 = [1,2,2,3]
 
@@ -20,7 +22,7 @@ print(unq_nums_len,nums)
 
 # Solution 2
 
-def no_duplicates(nums):
+def no_duplicates(nums: List[int]) -> int:
 
 	if len(nums) == 0:
 		return 0
@@ -36,4 +38,6 @@ def no_duplicates(nums):
 	return i + 1
 
 unq_nums_2 = no_duplicates(nums1)
+nums_to_string = str(nums1)
+
 print(unq_nums_2)
