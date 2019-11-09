@@ -2,6 +2,7 @@ nums = [1,2,2,3,6,6,7]
 
 def remove_duplicates(numbers):
 	i = 0
+	
 	while i < len(numbers)-1:
 
 		if numbers[i] == numbers[i+1]: 
